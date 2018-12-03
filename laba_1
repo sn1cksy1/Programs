@@ -1,63 +1,62 @@
-//  Лабораторна з веб №1
+// Лабораторна №1
 
-var name =  " Андрей Фресюк " ;
+
+var name =  " Бирчак Юрій " ;
 var a, b, c, d, result;
 
-// Задача № 1
-alert ( « Задача №1 » );
-alert (имя);
+//Завдання #1
+alert("Task #1");
+alert(name);
 
-// Задача №2
-alert ( « Задача № 2 » );
+//Завдання #2
+alert("Task #2");
 
-a =  11 ;
-b =  11 ;
-d =  7 ;
+a = 2;
+b = 5;
+d = 7;
 
-c = a - b;
-result = c + d;
+c = a-b;
+result = c+d;
 
-предупреждение (результат);
+alert(result);
 
-// Задача № 3
-alert ( « Задача № 3 » );
+//Завдання #3
+alert("Task #3");
 
-var variant =  prompt ( « Запишите свой вариант » );
-var integer =  parseInt (вариант, 10 );
+var variant = prompt("Write down your variant");
+var integer = parseInt(variant, );
 variant = integer;
 
-если (вариант > = 7 )
-  alert ( « Правильно » );
-еще
-  alert ( « Это неправильно » );
+if (variant >=7)
+  alert("It's right");
+else
+  alert("It's not right");
 
-if (вариант % 2 == 0 ) {
-  вариант + = 7 ;
-  предупреждение (вариант);
-  вариант - = 7 ;
+if (variant%2==0) {
+  variant+=7;
+  alert(variant);
 }
 else {
-  вариант - = 3 ;
-  предупреждение (вариант);
-  вариант + = 3 ;
+  variant-=3;
+  alert(variant);
 }
 
-// Задача №4
-alert ( « Задача № 4 » );
+//Завдання #4
+alert("Task #4");
 
-for ( var i =  1 ; i < вариант + 10 ; i ++ )
-  alert (i * i);
+for (var i = 1; i<variant+2; i++)
+  alert(i*i);
 
-// Задача № 5
-alert ( « Задача № 5 » );
+//Завдання #5
+alert("Task #5");
 
-var ToPrint =  true ;
+var ToPrint = true;
 
-для ( var i =  2 ; i < variant + 10 ; i ++ ) {
-  для ( var z =  2 ; z < i; z ++ )
-    если (i % z ==  0 )
-      ToPrint =  false ;
-  if (ToPrint ==  true )
-    alert (i);
-  ToPrint =  true ;
+for (var i = 2; i<variant+2; i++) {
+  for (var z = 2; z < i; z++)
+    if (i%z == 0)
+      ToPrint = false;
+  if (ToPrint == true)
+    alert(i);
+  ToPrint = true;
 }
